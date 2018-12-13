@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Movie</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/movies">Movies List</a></h3>
+            <h1>Create New Movie</h1>
+            <form action="/movies/save" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Title</td>
+                            <td><input type="text" name="title" /></td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td><input type="text" name="year" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Save" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

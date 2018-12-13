@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies Detail</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/movies">Movie List</a></h3>
+            <h1>Movie Detail</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Title</td>
+                        <td>{{ movie.title }}</td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td>{{ movie.year }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a href="/movies/edit/{{ movie._id }}">EDIT</a></h3>
+            <form action="/movies/delete/{{ movie._id }}" method="post">
+                <button type="submit">DELETE</button>
+            </form>
+        </div>
+    </body>
+</html>
